@@ -1,16 +1,13 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { interval, Subscription } from 'rxjs';
-
+import { Subscription, interval } from 'rxjs';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-count',
+  templateUrl: './count.component.html',
+  styleUrls: ['./count.component.css']
 })
 
-
-
-export class AppComponent implements OnInit, OnDestroy {
+export class CountComponent implements OnInit, OnDestroy {
   counter: number = 0;
   private counterSubscription!: Subscription;
 
